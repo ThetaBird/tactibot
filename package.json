@@ -1,0 +1,33 @@
+{
+  "name": "tactibot",
+  "version": "1.0.0",
+  "description": "The open-source release of Tacti - the largest Tacticool discord bot.",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "setup": "node scripts/setup.js",
+    "client:start": "pnpm --filter client start",
+    "client:build": "pnpm --filter client build",
+    "backend:dev": "pnpm --filter backend dev",
+    "backend:build": "pnpm --filter backend build",
+    "backend:start": "pnpm --filter backend start",
+    "build": "pnpm -r build",
+    "start": "pnpm run backend:start & pnpm run client:dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ThetaBird/tactibot.git"
+  },
+  "keywords": [
+    "tacticool",
+    "discord",
+    "bot"
+  ],
+  "author": "Max Jikharev",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

@@ -1,0 +1,8 @@
+/node_modules
+assets/avatars/*
+assets/clan_icons/*
+assets/country_flags/*
+assets/weapon_skins/*
+assets/outfits/*
+!0.png
+.env
